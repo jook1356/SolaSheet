@@ -79,7 +79,7 @@
   --accent-grad-soft: linear-gradient(135deg, rgba(96, 165, 250, 0.25), rgba(192, 132, 252, 0.2));
 }
 
-body {
+html, body {
   font-family: var(--font-main) !important;
 }
 
@@ -111,47 +111,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -3rem;
   padding: 7rem 1.5rem 5.5rem;
   text-align: center;
-  overflow: hidden;
   isolation: isolate;
   margin-bottom: 5rem;
-  background:
-    radial-gradient(ellipse 90% 60% at 50% 0%, var(--orb-blue), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 85% 30%, var(--orb-violet), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 15% 70%, var(--orb-cyan), transparent 60%),
-    linear-gradient(180deg, var(--bg-gradient-start) 0%, transparent 100%);
-}
-
-.hero-section::before,
-.hero-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(110px);
-  z-index: -1;
-  pointer-events: none;
-}
-
-.hero-section::before {
-  width: 580px;
-  height: 580px;
-  background: radial-gradient(circle, var(--orb-blue), transparent 70%);
-  top: -200px;
-  left: -140px;
-  animation: lg-float 22s ease-in-out infinite;
-}
-
-.hero-section::after {
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, var(--orb-violet), transparent 70%);
-  bottom: -200px;
-  right: -140px;
-  animation: lg-float 28s ease-in-out infinite reverse;
-}
-
-@keyframes lg-float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%      { transform: translate(50px, -40px) scale(1.1); }
 }
 
 .hero-badge {
@@ -522,6 +483,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.feature-desc code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 0.12em 0.45em;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--glass-border);
+  color: var(--brand-blue-700);
+  white-space: nowrap;
+}
+
+.dark .feature-desc code {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--brand-blue-200);
+}
+
 /* ==========================================================================
    FINAL CTA — full-bleed glass with floating orbs
    ========================================================================== */
@@ -533,27 +510,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
   padding: 6rem 1.5rem 7rem;
   text-align: center;
-  overflow: hidden;
   isolation: isolate;
   margin-top: 4rem;
-  background:
-    radial-gradient(ellipse 70% 50% at 50% 100%, var(--orb-violet), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 50% 0%, var(--orb-blue), transparent 60%);
-}
-
-.final-cta::before {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--orb-cyan), transparent 70%);
-  filter: blur(100px);
-  bottom: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-  animation: lg-float 24s ease-in-out infinite;
 }
 
 .final-cta-headline {
