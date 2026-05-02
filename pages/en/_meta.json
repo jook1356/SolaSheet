@@ -1,0 +1,20 @@
+{
+    "index": {
+        "title": "Home",
+        "type": "page",
+        "display": "hidden"
+    },
+    "docs": {
+        "title": "Documentation",
+        "type": "page"
+    },
+    "license": {
+        "title": "License",
+        "type": "page"
+    },
+    "ko_link": {
+        "title": "한국어",
+        "type": "page",
+        "href": "/ko"
+    }
+}
