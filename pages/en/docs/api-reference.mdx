@@ -1,0 +1,33 @@
+# API Reference
+
+The main API specification of PureSheet.
+
+## Grid Options
+
+The options object passed to the `new PureSheet(container, options)` constructor.
+
+| Option | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `data` | `Array` | `[]` | The data array to display in the grid. |
+| `columns` | `Array` | `[]` | The column definition array. |
+| `rowHeight` | `number` | `35` | Row height in pixels. |
+| `headerHeight` | `number` | `40` | Header height in pixels. |
+
+## Column Definitions
+
+Configuration for each entry in the `columns` array.
+
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `field` | `string` | Maps to the key of the data object. |
+| `header` | `string` | Text displayed in the header. |
+| `width` | `number` | Column width in pixels. |
+| `formatter` | `function` | Function to customize the cell value. |
+
+## Methods
+
+### `grid.render()`
+Renders the grid to the DOM.
+
+### `grid.setData(data)`
+Updates the grid's data.

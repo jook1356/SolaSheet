@@ -4,8 +4,12 @@
         "type": "page",
         "display": "hidden"
     },
-    "docs": {
-        "title": "Documentation",
-        "type": "page"
+    "en": {
+        "type": "page",
+        "display": "hidden"
+    },
+    "ko": {
+        "type": "page",
+        "display": "hidden"
     }
 }

@@ -1,0 +1,47 @@
+# Getting Started
+
+Learn how to install PureSheet in your project and render a basic grid.
+
+## Installation
+
+Install the package using npm or yarn.
+
+```bash
+npm install puresheet
+# or
+yarn add puresheet
+```
+
+## Basic Usage
+
+Prepare a container in your HTML where the grid will be rendered, then create a `PureSheet` instance in JavaScript.
+
+```html
+<div id="grid-container" style="height: 500px; width: 100%;"></div>
+```
+
+```javascript
+import { PureSheet } from 'puresheet';
+import 'puresheet/dist/puresheet.css'; // Import the stylesheet
+
+const data = [
+  { id: 1, name: 'Alice', age: 25, role: 'Developer' },
+  { id: 2, name: 'Bob', age: 30, role: 'Designer' },
+  { id: 3, name: 'Charlie', age: 28, role: 'Manager' },
+];
+
+const columns = [
+  { field: 'id', header: 'ID', width: 50 },
+  { field: 'name', header: 'Name', width: 100 },
+  { field: 'age', header: 'Age', width: 80 },
+  { field: 'role', header: 'Role', width: 150 },
+];
+
+const grid = new PureSheet('#grid-container', {
+  data: data,
+  columns: columns,
+});
+
+// Render the grid
+grid.render();
+```

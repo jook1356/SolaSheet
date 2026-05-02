@@ -11,10 +11,5 @@
     "license": {
         "title": "라이선스",
         "type": "page"
-    },
-    "en_link": {
-        "title": "English",
-        "type": "page",
-        "href": "/en"
     }
 }

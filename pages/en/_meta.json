@@ -11,10 +11,5 @@
     "license": {
         "title": "License",
         "type": "page"
-    },
-    "ko_link": {
-        "title": "한국어",
-        "type": "page",
-        "href": "/ko"
     }
 }
