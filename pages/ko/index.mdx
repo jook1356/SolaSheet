@@ -3,73 +3,111 @@ title: PureSheet - 고성능 데이터 그리드
 ---
 
 <div className="hero-section">
+  <div className="hero-badge">
+    <span className="hero-badge-dot"></span>
+    <span>PureSheet · 차세대 데이터 그리드</span>
+  </div>
   <h1 className="hero-headline">
-    고성능<br/>
-    통합 그리드 시스템
+    <span className="hero-headline-row">데이터를 다루는</span>
+    <span className="hero-headline-row">가장 자연스러운 방법</span>
   </h1>
   <div className="hero-subheadline">
-    Flat과 Pivot 기능을 모두 갖춘 차세대 자바스크립트 그리드 라이브러리.<br/>
-    속도를 위해 설계되고, 데이터 분석을 위해 만들어졌습니다.
+    Flat과 Pivot을 하나로 엮은 자바스크립트 그리드.<br/>
+    부드러운 60fps, 한 줄의 설정, 그리고 깊이 있는 분석.
   </div>
   <div className="cta-group">
-    <a href="/ko/docs/getting-started" className="btn-primary">시작하기</a>
+    <a href="/ko/docs/getting-started" className="btn-primary">시작하기 →</a>
     <a href="https://github.com/jook1356/PureSheet" target="_blank" className="btn-secondary">GitHub에서 보기</a>
+  </div>
+  <div className="hero-stats">
+    <div className="hero-stat">
+      <div className="hero-stat-value">60</div>
+      <div className="hero-stat-label">FPS · 항상</div>
+    </div>
+    <div className="hero-stat-divider"></div>
+    <div className="hero-stat">
+      <div className="hero-stat-value">100K+</div>
+      <div className="hero-stat-label">ROWS · 가볍게</div>
+    </div>
+    <div className="hero-stat-divider"></div>
+    <div className="hero-stat">
+      <div className="hero-stat-value">0</div>
+      <div className="hero-stat-label">RUNTIME DEPS</div>
+    </div>
+    <div className="hero-stat-divider"></div>
+    <div className="hero-stat">
+      <div className="hero-stat-value">100%</div>
+      <div className="hero-stat-label">TYPESCRIPT</div>
+    </div>
+  </div>
+</div>
+
+<div className="section-block">
+  <div className="section-eyebrow">엔진</div>
+  <h2 className="section-heading">고성능 그리드를 위한 모든 것</h2>
+  <div className="section-lede">
+    가벼움과 표현력 사이의 균형. PureSheet는 데이터를 빠르게 보여주고, 그 자리에서 분석합니다.
   </div>
 </div>
 
 <div className="feature-grid-pro">
   <div className="feature-card-pro">
-    <div className="feature-title">
-      고성능 아키텍처
-    </div>
+    <div className="feature-number">01</div>
+    <div className="feature-title">한결같은 60fps</div>
     <div className="feature-desc">
-      가상 스크롤을 기본으로 지원합니다. 스마트 DOM 재활용 기법으로 수십만 행의 데이터도 일관된 60fps 렌더링 성능을 유지합니다.
-    </div>
-  </div>
-  
-  <div className="feature-card-pro">
-    <div className="feature-title">
-      통합 그리드 시스템
-    </div>
-    <div className="feature-desc">
-      Flat Grid와 Pivot Grid 모드를 자유롭게 전환할 수 있습니다. 별도 라이브러리나 무거운 플러그인 없이, 내장된 피벗 집계 기능으로 복잡한 데이터셋을 분석하세요.
+      가상 스크롤이 기본. 스마트한 DOM 재활용으로 수십만 행을 다뤄도 끊김 없는 60fps 렌더링을 유지합니다.
     </div>
   </div>
 
   <div className="feature-card-pro">
-    <div className="feature-title">
-      개발자 경험
-    </div>
+    <div className="feature-number">02</div>
+    <div className="feature-title">하나의 통합 그리드</div>
     <div className="feature-desc">
-      견고한 타입 안정성을 위해 TypeScript로 작성되었습니다. CSS 변수 기반의 무설정 스타일링과 React, Vue, Angular, Vanilla JS 어디서나 동작하는 프레임워크 비종속 설계를 제공합니다.
+      Flat과 Pivot 모드를 즉시 전환. 추가 라이브러리 없이 내장된 피벗 집계로 복잡한 데이터셋을 그 자리에서 분석합니다.
     </div>
   </div>
 
   <div className="feature-card-pro">
-    <div className="feature-title">
-      테마 가능한 디자인
-    </div>
+    <div className="feature-number">03</div>
+    <div className="feature-title">개발자 우선 설계</div>
     <div className="feature-desc">
-      다크 모드 우선 접근으로 설계되었습니다. CSS 변수를 통해 그리드의 모든 영역을 커스터마이징하여 애플리케이션의 디자인 시스템에 완벽하게 맞출 수 있습니다.
+      TypeScript로 작성된 견고한 타입. CSS 변수만으로 충분한 무설정 스타일링. React, Vue, Angular, Vanilla JS 어디서든 동작합니다.
     </div>
   </div>
 
   <div className="feature-card-pro">
-    <div className="feature-title">
-      경량 코어
-    </div>
+    <div className="feature-number">04</div>
+    <div className="feature-title">유리처럼 투명한 테마</div>
     <div className="feature-desc">
-      의존성을 최소화했습니다. 코어 번들은 기능을 희생하지 않으면서도 빠른 로드 시간을 위해 최적화되어, 현대 웹의 성능 기준에 부합합니다.
+      다크 모드 우선 설계. CSS 변수만으로 그리드의 모든 면을 디자인 시스템에 정확히 맞춰 조율할 수 있습니다.
     </div>
   </div>
 
   <div className="feature-card-pro">
-    <div className="feature-title">
-      듀얼 라이선스
-    </div>
+    <div className="feature-number">05</div>
+    <div className="feature-title">가볍고 빠른 코어</div>
     <div className="feature-desc">
-      비상업·오픈소스 프로젝트에서는 무료로 사용할 수 있으며, 엔터프라이즈 애플리케이션과 사내 업무 도구를 위한 상업용 라이선스도 제공합니다. <a href="/ko/license" style={{color: 'inherit', textDecoration: 'underline'}}>자세히 보기</a>
+      의존성을 최소화했습니다. 기능을 희생하지 않으면서도 빠른 로드 시간을 위해 코어 번들을 끊임없이 최적화합니다.
     </div>
   </div>
 
+  <div className="feature-card-pro">
+    <div className="feature-number">06</div>
+    <div className="feature-title">공정한 듀얼 라이선스</div>
+    <div className="feature-desc">
+      비상업·오픈소스 프로젝트엔 무료로, 엔터프라이즈에는 책임 있는 상업 라이선스로. <a href="/ko/license" style={{color: 'inherit', textDecoration: 'underline'}}>자세히 보기</a>
+    </div>
+  </div>
+</div>
+
+<div className="final-cta">
+  <h2 className="final-cta-headline">지금, 5분이면 충분합니다</h2>
+  <div className="final-cta-sub">
+    npm install 한 번으로 첫 그리드를 띄울 수 있습니다.<br/>
+    문서가 그 다음을 안내해 드립니다.
+  </div>
+  <div className="cta-group">
+    <a href="/ko/docs/getting-started" className="btn-primary">문서 보기 →</a>
+    <a href="https://github.com/jook1356/PureSheet" target="_blank" className="btn-secondary">소스코드</a>
+  </div>
 </div>
